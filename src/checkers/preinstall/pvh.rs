@@ -1,6 +1,7 @@
 use crate::helpers::{
     CheckGroup, CheckGroupCategory, CheckGroupResult, CheckResult,
     CheckResultValue::{Errored, Failed, Passed},
+    cpu::{extract_cpu_vendor, extract_flags},
     host_executor::HostNamespaceExecutor,
 };
 use anyhow::{Result, bail};
