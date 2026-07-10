@@ -3,4 +3,5 @@ pub mod iommu;
 pub mod kernel;
 pub mod numa;
 pub mod pvh;
+pub mod kvm;
 pub mod system;
