@@ -62,7 +62,7 @@ struct PreinstallArgs {
 
     /// Which hypervisor to run checks against (default: xen)
     #[arg(short, long, default_value = "xen")]
-    run_checks_for: BaseHypervisor,
+    hypervisor: BaseHypervisor,
 
     /// Run only selected checks, instead of default behavior of running all.
     /// Will override all other check enablement flags.
@@ -131,7 +131,7 @@ async fn main() -> Result<()> {
                 args.byo_kernel,
                 args.record_hostinfo,
                 args.only_checks,
-                args.run_checks_for,
+                args.hypervisor,
                 args.report_dir,
             )
             .await
