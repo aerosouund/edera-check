@@ -61,7 +61,7 @@ struct PreinstallArgs {
     record_hostinfo: bool,
 
     /// Which hypervisor to run checks against (default: xen)
-    #[arg(short, long, default_value = "xen")]
+    #[arg(long, default_value = "xen")]
     hypervisor: BaseHypervisor,
 
     /// Run only selected checks, instead of default behavior of running all.
