@@ -60,7 +60,7 @@ struct PreinstallArgs {
     #[arg(short, long, default_value_t = true)]
     record_hostinfo: bool,
 
-    /// Which hypervisor to run checks against (default: xen)
+    /// Which hypervisor to run checks against
     #[arg(long, default_value = "xen")]
     hypervisor: BaseHypervisor,
 
